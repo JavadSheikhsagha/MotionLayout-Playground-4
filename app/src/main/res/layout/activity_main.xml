@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_chooseModeActivity_mainMotion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutDescription="@xml/activity_choose_game_mode_xml_constraintlayout_scene"
+        app:layout_constraintBottom_toTopOf="@+id/rel_chooseModeActivity_bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_gameModeActivity_rel1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:elevation="4dp"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="40dp">
+
+            <RelativeLayout
+                android:id="@+id/rel_gameModeActivity_inRel1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/shape_card1_choosemodeactivity" />
+
+            <ImageView
+                android:id="@+id/img_gameModeActivity_inRel1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test_image"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_gameModeActivity_rel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:alpha=".7"
+            android:elevation="3dp"
+            android:rotation="10">
+
+            <RelativeLayout
+                android:id="@+id/rel_gameModeActivity_inRel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/shape_card2_choosemodeactivtiy" />
+
+            <ImageView
+                android:id="@+id/img_gameModeActivity_inRel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test_image"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_gameModeActivity_rel3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:alpha=".3"
+            android:elevation="2dp"
+            android:rotation="-10">
+
+            <RelativeLayout
+                android:id="@+id/rel_gameModeActivity_inRel3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/shape_card3_choosemodeactivity" />
+
+            <ImageView
+                android:id="@+id/img_gameModeActivity_inRel3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test_image"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_gameModeActivity_rel4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="40dp"
+            android:alpha="0"
+            android:elevation="2dp"
+            android:rotation="0">
+
+            <RelativeLayout
+                android:id="@+id/rel_gameModeActivity_inRel4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/shape_card4_choosemodeactivity" />
+
+            <ImageView
+                android:id="@+id/img_gameModeActivity_inRel4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/test_image"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_chooseModeActivity_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

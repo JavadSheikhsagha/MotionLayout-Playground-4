@@ -1,0 +1,2 @@
+rootProject.name = "MotionLayout-Playground 3"
+include ':app'
